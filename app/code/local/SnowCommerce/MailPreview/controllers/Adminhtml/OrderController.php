@@ -72,13 +72,14 @@ class SnowCommerce_MailPreview_Adminhtml_OrderController extends Mage_Adminhtml_
             ->load($templateId)
             ->setDesignConfig(array('area' => 'frontend', 'store' => $storeId));
 //Create an array of variables to assign to template
-
+        $logo_url = Mage::getBaseUrl()."skin/adminhtml/default/default/images/logo.png";
         $emailTemplateVariables = array(
             'name'         => $customerName,
             'order'        => $order,
             'billing'      => $order->getBillingAddress(),
             'payment_html' => $paymentBlockHtml,
-            'store'        => Mage::app()->getStore($storeId)
+            'store'        => Mage::app()->getStore($storeId),
+            'logo_url'     => $logo_url
         );
         $processedTemplate = $emailTemplate->getProcessedTemplate($emailTemplateVariables);
 
