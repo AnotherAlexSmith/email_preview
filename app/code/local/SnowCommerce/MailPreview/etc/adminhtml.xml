@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+<menu>
+    <snowcommerce>
+        <title>SnowCommerce</title>
+        <sort_order>15</sort_order>
+        <children>
+            <methods>
+                <title module="adminhtml">Developer Tools</title>
+                <sort_order>0</sort_order>
+                <children>
+                    <preview translate="title" module="sc_mail">
+                        <title>Show Order Mail Previews</title>
+                        <sort_order>11</sort_order>
+                        <action>sc_mail/adminhtml_order/index</action>
+                    </preview>
+                </children>
+            </methods>
+        </children>
+    </snowcommerce>
+</menu>
+</config>

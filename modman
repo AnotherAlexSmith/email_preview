@@ -1,0 +1,4 @@
+app/code/local/SnowCommerce/MailPreview app/code/local/SnowCommerce/MailPreview
+app/design/adminhtml/default/default/layout/sc_mail.xml app/design/adminhtml/default/default/layout/sc_mail.xml
+app/etc/modules/SnowCommerce_MailPreview.xml app/etc/modules/SnowCommerce_MailPreview.xml
+app/etc/modules/SnowCommerce_MailPreview.xml app/etc/modules/SnowCommerce_MailPreview.xml
